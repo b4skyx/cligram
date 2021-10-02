@@ -2,7 +2,6 @@
 // Author: b4skyx
 // Upstream: https://github.com/b4skyx/cligram
 
-console.log(">>> The Grammar Quiz <<<")
 const readlineSync = require("readline-sync");
 
 const num_questions = 7;
@@ -10,6 +9,14 @@ const data = require("./data.json");
 
 var answered = 0;
 var correct = 0;
+
+var name = readlineSync.question("Beep Beep! Enter your name: ")
+if (!readlineSync.keyInYN(`
+Welcome to Cligam, ${name}.
+Test your proficiency in english by answering a few questions.
+Do you want to start?`)){
+	process.exit();
+}
 
 // Rnadomize the questions fetched through data and return only the required number
 function get_questions(){
