@@ -1,0 +1,12 @@
+{
+  "name": "Cligram",
+  "version": "1.0.0",
+  "description": "A grammar quiz to boost your English skills.",
+  "main": "index.js",
+  "repository": "https://github.com/b4skyx/cligram",
+  "author": "b4skyx",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
